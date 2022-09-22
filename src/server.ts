@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { filterImageFromURL, deleteLocalFiles } from './util/util';
-import { Response, Request} from 'express';
+import { Response, Request, Router} from 'express';
 
 
 (async () => {

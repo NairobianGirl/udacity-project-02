@@ -15,7 +15,7 @@ import { Response, Request, Router} from 'express';
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
 
- app.get(' ./filteredimage', async (req: Request, res: Response) =>{
+ app.get('/filteredimage', async (req: Request, res: Response) =>{
   const image_url= req.query.image_url.toString();
   if (!image_url) {
     res.status(400).send ("bad request");
